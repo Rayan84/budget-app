@@ -15,6 +15,9 @@ gem "pg", "~> 1.1"
 # Devise gem
 gem 'devise'
 
+# Rubocop
+gem 'rubocop', '>=1.0', '< 2.0'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
