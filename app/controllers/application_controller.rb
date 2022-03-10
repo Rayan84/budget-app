@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-
-  def after_sign_up(resource)
+  def after_sign_up(_resource)
     redirect '/users/edit'
   end
 end
