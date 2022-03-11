@@ -9,7 +9,9 @@ class CategoriesController < ApplicationController
   end
 
   # GET /categories/1 or /categories/1.json
-  def show; end
+  def show;
+    @category = Category.find_by(id: params[:id])
+  end
 
   # GET /categories/new
   def new

@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -15,8 +19,9 @@
 }
 
 .nav-container {
-  background-color: rgb(101, 101, 192);
-  padding: 16px;
+  background-color: rgb(100, 79, 194);
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .nav-icon {
@@ -43,4 +48,40 @@
 
 .justify-content-space-between {
   justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.create-new-button-container {
+  background-color: rgba(162, 199, 108, 0.8);
+  padding: 5px;
+}
+
+.create-new-button-container a {
+  font-size: 1.6rem;
+}
+
+.category-container {
+  background-color: rgba(152, 179, 179, 0.1);
+  margin-bottom: 15px;
+  padding: 6px;
+  border: solid 1px lightgrey;
+}
+
+.category-container img {
+  margin-left: 5px;
+  width: 8rem;
+}
+
+.category-container p {
+  margin-left: 18px;
+}
+
+.padding-6-px {
+  padding: 6px;
 }
