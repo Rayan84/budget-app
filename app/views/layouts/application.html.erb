@@ -8,11 +8,13 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/89c0957ca7.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= render 'partials/nav' %>
     <%= yield %>
   </body>
 </html>

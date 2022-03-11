@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  def after_sign_up(_resource)
-    redirect '/users/edit'
-  end
+  before_action :authenticate_user!
+
 end

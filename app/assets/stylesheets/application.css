@@ -13,3 +13,34 @@
 .text-decoration-none {
   text-decoration: none;
 }
+
+.nav-container {
+  background-color: rgb(101, 101, 192);
+  padding: 16px;
+}
+
+.nav-icon {
+  font-size: 1.7rem;
+}
+
+.cursor-pointer{
+  cursor: pointer
+}
+
+.color-white {
+  color: white;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.search-icon {
+  font-size: 1.6rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
