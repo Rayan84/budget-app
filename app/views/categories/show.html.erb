@@ -7,6 +7,11 @@
   <%= link_to "Back to categories", categories_path %>
 
   <%= button_to "Destroy this category", @category, method: :delete %>
+  <div class="padding-15-px">
+  <div class="create-new-button-container text-align-center">
+    <%= link_to "New Transaction", new_category_path, class: "color-white text-decoration-none" %>
+  </div>
+</div>
 </div>
 
 

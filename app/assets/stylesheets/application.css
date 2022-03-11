@@ -57,13 +57,19 @@ body {
   margin-bottom: 3px;
 }
 
+.padding-15-px {
+  padding: 10px;
+  background-color: rgb(155, 209, 74);
+}
+
 .create-new-button-container {
-  background-color: rgba(162, 199, 108, 0.8);
-  padding: 5px;
+  border: solid white 1px;
+  padding: 4px;
 }
 
 .create-new-button-container a {
   font-size: 1.6rem;
+  width: 90%;
 }
 
 .category-container {
