@@ -24,7 +24,7 @@ This project is about building a mobile web application where you can manage you
 ## To get a local copy run the following steps:
 - Copy this link [this link](https://github.com/Rayan84/budget-app.git)
 - Open your terminal or command line
-- Run "git clone Paste [this link](https://github.com/Hector096/budget_app)"
+- Run `git clone https://github.com/Rayan84/budget-app.git`
 - Open the folder with your code editor
 - Create a branch to work on
 
@@ -37,7 +37,6 @@ To run the tests locally :
 
  ` gem install rspec`
  
-
 
 👤 **Rayan Rassam**
 
