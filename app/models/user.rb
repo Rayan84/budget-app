@@ -4,12 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-        # def after_sign_up
-        #   redirect_to '/categories'
-        # end
-        
-        # def after_sign_in_path_for(resource)
-        #   users_edit_path
-        # end
 
+         validates :name, :email, presence: true, length: { maximum: 150 }
+         validates :email, uniqueness: true
+       
+         has_many :transactions
 end

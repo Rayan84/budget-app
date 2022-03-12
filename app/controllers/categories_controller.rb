@@ -5,7 +5,11 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
-    @categories = Category.all
+    @categories = Category.where(author_id: current_user.id)
+    @user_transactions = Transaction.where(author_id: current_user.id)
+
+    @total = @user_transactions.where(categories_id: params[:id]).sum(:amount)
+
   end
 
   # GET /categories/1 or /categories/1.json
@@ -27,7 +31,7 @@ class CategoriesController < ApplicationController
 
   # POST /categories or /categories.json
   def create
-    @category = Category.new(category_params)
+    @category = Category.new(author_id: current_user.id, name: category_params[:name], icon: category_params[:icon])
 
     respond_to do |format|
       if @category.save
