@@ -5,6 +5,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
+
+
     @categories = Category.where(author_id: current_user.id)
     @user_transactions = Transaction.where(author_id: current_user.id)
 
