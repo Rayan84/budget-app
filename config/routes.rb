@@ -14,6 +14,5 @@ Rails.application.routes.draw do
 
   unauthenticated :user do
     root to: 'home#index'
-  end
 
 end
