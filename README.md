@@ -22,7 +22,7 @@ This project is about building a mobile web application where you can manage you
 * Yarn (yarn --v)
 
 ## To get a local copy run the following steps:
-- Copy this link [this link](https://github.com/Hector096/budget_app)
+- Copy this link [this link](https://github.com/Rayan84/budget-app.git)
 - Open your terminal or command line
 - Run "git clone Paste [this link](https://github.com/Hector096/budget_app)"
 - Open the folder with your code editor
@@ -39,18 +39,18 @@ To run the tests locally :
  
 
 
-👤 **Author**
+👤 **Rayan Rassam**
 
-:bearded_person: **Hector**
-  - GitHub: [@githubhandle](https://github.com/Hector096)
-  - Linkedin: [@linkedinhandle](https://www.linkedin.com/in/hector096/)
+- GitHub: [@Rayan84](https://github.com/Rayan84)
+- Twitter: [@Rayan65096267](https://twitter.com/Rayan65096267)
+- LinkedIn: [Rayan Rassam](https://www.linkedin.com/in/rayan-rassam/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Hector096/budget_app/issues).
+Feel free to check the [issues page](../../issues/).
 
 
 ## Acknowledgements
