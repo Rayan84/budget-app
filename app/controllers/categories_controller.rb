@@ -1,13 +1,24 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[show edit update destroy]
+  # before_action :authenticate_user!
+
+  # before_action :set_category, only: %i[show edit update destroy]
 
   # GET /categories or /categories.json
   def index
-    @categories = Category.all
+    @categories = Category.where(author_id: current_user.id)
+    @user_transactions = Transaction.where(author_id: current_user.id)
+
+    @total = @user_transactions.where(categories_id: params[:id]).sum(:amount)
   end
 
   # GET /categories/1 or /categories/1.json
-  def show; end
+  def show
+    @params = params
+    @category = Category.find_by(id: params[:id])
+    @user_transactions = Transaction.where(author_id: current_user.id)
+    @category_transactions = @user_transactions.where(categories_id: params[:id])
+    @total = @user_transactions.where(categories_id: params[:id]).sum(:amount)
+  end
 
   # GET /categories/new
   def new
@@ -19,7 +30,7 @@ class CategoriesController < ApplicationController
 
   # POST /categories or /categories.json
   def create
-    @category = Category.new(category_params)
+    @category = Category.new(author_id: current_user.id, name: category_params[:name], icon: category_params[:icon])
 
     respond_to do |format|
       if @category.save
