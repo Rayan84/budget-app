@@ -10,7 +10,11 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show;
+    @params = params
     @category = Category.find_by(id: params[:id])
+    @user_transactions = Transaction.where(author_id: current_user.id)
+    @category_transactions = @user_transactions.where(categories_id: params[:id])
+    @total = @user_transactions.where(categories_id: params[:id]).sum(:amount)
   end
 
   # GET /categories/new

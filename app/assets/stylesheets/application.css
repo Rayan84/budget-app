@@ -67,9 +67,18 @@ body {
   padding: 4px;
 }
 
-.create-new-button-container a {
-  font-size: 1.6rem;
+.create-new-button-container a,
+.create-new-button-container input {
+  font-size: 1.5rem;
   width: 90%;
+}
+
+.create-new-button-container input {
+  background-color: rgb(149, 204, 67);   
+}
+
+.width-100-percent {
+  width: 100%;
 }
 
 .category-container {
@@ -88,6 +97,25 @@ body {
   margin-left: 18px;
 }
 
+.back-button {
+  font-size: 2.8rem;
+  color: blue;
+}
+
 .padding-6-px {
   padding: 6px;
+}
+
+.padding-12-px {
+  padding: 12px;
+}
+
+.border-none {
+  border: none;
+}
+
+.form-input {
+  background-color: aliceblue;
+  padding: 14px;
+  margin: 11px;
 }

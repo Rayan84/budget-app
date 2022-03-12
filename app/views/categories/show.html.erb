@@ -1,15 +1,26 @@
 <p style="color: green"><%= notice %></p>
+<div class="padding-12-px">
+  <h1><%= @category.name %> Transactions</h1>
+  <h3>Total spent: <%= @total %></h3>
+</div>
+<% @category_transactions.each do |transaction| %>
+  <div class="padding-12-px">
+  <div class="category-container">
+    <h3><%= transaction.name %></h3>
+    <p><%= transaction.amount %></p>
+    <p><%= transaction.created_at %></p>
+  </div>
+  </div>
+<% end %>
 
-<%= render '/categories/category' %>
 
 <div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
-
-  <%= button_to "Destroy this category", @category, method: :delete %>
+  <div class="padding-12-px">
+    <%= link_to "<", categories_path, class: "text-decoration-none back-button" %>
+  </div>
   <div class="padding-15-px">
   <div class="create-new-button-container text-align-center">
-    <%= link_to "New Transaction", new_category_path, class: "color-white text-decoration-none" %>
+    <%= link_to "New Transaction", "/categories/#{@category.id}/transactions/new", class: "color-white text-decoration-none" %>
   </div>
 </div>
 </div>

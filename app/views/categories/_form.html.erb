@@ -1,3 +1,4 @@
+
 <%= form_with(model: category) do |form| %>
   <% if category.errors.any? %>
     <div style="color: red">
@@ -13,15 +14,16 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: 'form-input border-none width-100-percent' %>
   </div>
 
   <div>
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+    <%= form.text_field :icon, class: 'form-input border-none width-100-percent' %>
   </div>
 
   <div>
     <%= form.submit %>
   </div>
+  
 <% end %>
