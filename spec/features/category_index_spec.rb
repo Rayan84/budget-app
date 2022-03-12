@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 RSpec.feature 'Category index', type: :feature do
   background do
     visit new_user_session_path
@@ -25,7 +24,6 @@ RSpec.feature 'Category index', type: :feature do
   scenario 'display Add New Category button on page' do
     expect(page).to have_link 'New category'
   end
-
 
   scenario 'When I click on Add category, I am redirected to that Category\'s new page.' do
     click_link('New category')

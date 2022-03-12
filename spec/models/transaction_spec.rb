@@ -17,5 +17,4 @@ RSpec.describe Transaction, type: :model do
     subject.amount = nil
     expect(subject).to_not be_valid
   end
-
 end

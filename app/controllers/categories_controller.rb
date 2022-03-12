@@ -1,21 +1,18 @@
 class CategoriesController < ApplicationController
-  #before_action :authenticate_user!
+  # before_action :authenticate_user!
 
-  #before_action :set_category, only: %i[show edit update destroy]
+  # before_action :set_category, only: %i[show edit update destroy]
 
   # GET /categories or /categories.json
   def index
-
-
     @categories = Category.where(author_id: current_user.id)
     @user_transactions = Transaction.where(author_id: current_user.id)
 
     @total = @user_transactions.where(categories_id: params[:id]).sum(:amount)
-
   end
 
   # GET /categories/1 or /categories/1.json
-  def show;
+  def show
     @params = params
     @category = Category.find_by(id: params[:id])
     @user_transactions = Transaction.where(author_id: current_user.id)
