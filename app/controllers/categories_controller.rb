@@ -1,8 +1,7 @@
-class CategoriesContro
+class CategoriesController < ApplicationController
   # before_action :authenticate_user!
 
   # before_action :set_category, only: %i[show edit update destroy]
-
 
   # GET /categories or /categories.json
   def index
@@ -13,7 +12,6 @@ class CategoriesContro
   end
 
   # GET /categories/1 or /categories/1.json
-
   def show
     @params = params
     @category = Category.find_by(id: params[:id])
@@ -21,7 +19,6 @@ class CategoriesContro
     @category_transactions = @user_transactions.where(categories_id: params[:id])
     @total = @user_transactions.where(categories_id: params[:id]).sum(:amount)
   end
-
 
   # GET /categories/new
   def new

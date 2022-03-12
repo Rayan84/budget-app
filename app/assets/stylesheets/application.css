@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 .text-align-center {
@@ -28,8 +28,8 @@ body {
   font-size: 1.7rem;
 }
 
-.cursor-pointer{
-  cursor: pointer
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .color-white {
@@ -74,7 +74,7 @@ body {
 }
 
 .create-new-button-container input {
-  background-color: rgb(149, 204, 67);   
+  background-color: rgb(149, 204, 67);
 }
 
 .width-100-percent {
@@ -121,13 +121,12 @@ body {
 }
 
 .sign-out-button {
-  background-color: rgb(67, 61, 141, 0.0);
+  background-color: rgb(67, 61, 141, 0);
   font-size: 1.5rem;
 }
 
-.button_to  {
+.button_to {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
